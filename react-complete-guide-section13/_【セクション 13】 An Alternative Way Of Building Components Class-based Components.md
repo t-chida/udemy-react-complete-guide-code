@@ -1,0 +1,1 @@
+【セクション 13】 An Alternative Way Of Building Components: Class-based Components
