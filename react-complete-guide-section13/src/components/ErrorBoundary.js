@@ -3,8 +3,9 @@ import { Component } from "react";
 class ErrorBoundary extends Component {
   constructor() {
     super();
-    this.state = { hadError: false };
+    this.state = { hasError: false };
   }
+
   componentDidCatch(error) {
     console.log(error);
     this.setState({ hasError: true });
