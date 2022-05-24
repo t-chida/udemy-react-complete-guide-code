@@ -1,6 +1,4 @@
-import { useState } from "react";
-
-import useInput from "../hooks/use-input";
+import useInput from '../hooks/use-input';
 
 const SimpleInput = (props) => {
   const {
@@ -16,7 +14,7 @@ const SimpleInput = (props) => {
     value: enteredEmail,
     isValid: enteredEmailIsValid,
     hasError: emailInputHasError,
-    valueChangeHandler: emailChangedHandler,
+    valueChangeHandler: emailChangeHandler,
     inputBlurHandler: emailBlurHandler,
     reset: resetEmailInput,
   } = useInput((value) => value.includes("@"));
@@ -36,6 +34,7 @@ const SimpleInput = (props) => {
 
     console.log(enteredName);
 
+    // nameInputRef.current.value = ''; => NOT IDEAL, DON'T MANIPULATE THE DOM
     resetNameInput();
     resetEmailInput();
   };
@@ -66,9 +65,9 @@ const SimpleInput = (props) => {
       <div className={emailInputClasses}>
         <label htmlFor="email">Your E-Mail</label>
         <input
-          type="email"
-          id="email"
-          onChange={emailChangedHandler}
+          type='email'
+          id='email'
+          onChange={emailChangeHandler}
           onBlur={emailBlurHandler}
           value={enteredEmail}
         />
