@@ -26,3 +26,7 @@ yarn-error.log*
 # vscode
 .vscode
 *.code-workspace
+
+# Firebase
+.firebase/
+.firebaserc
