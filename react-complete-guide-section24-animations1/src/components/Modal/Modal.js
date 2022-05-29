@@ -20,7 +20,6 @@ const modal = (props) => {
         enterActive: "ModalOpen",
         exit: "",
         exitActive: "ModalClosed",
-        appearActive: "",
       }}
     >
       <div className="Modal">
