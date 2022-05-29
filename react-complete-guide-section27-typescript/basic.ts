@@ -64,3 +64,10 @@ people = [
 
 let course: string | number = "React - The Complete Guide";
 course = 12341;
+
+type Person = {
+  name: string;
+  age: number;
+};
+
+let personType: Person;
