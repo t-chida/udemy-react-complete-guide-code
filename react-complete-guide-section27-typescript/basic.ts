@@ -59,3 +59,9 @@ people = [
     age: 32,
   },
 ];
+
+// Type inference
+
+let course = "React - The Complete Guide";
+
+// course = 12341;
