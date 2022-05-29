@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "typescript": "^4.7.2"
+  },
+  "name": "react-complete-guide-section27-typescript",
+  "version": "1.0.0",
+  "main": "no-typescript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
