@@ -21,9 +21,13 @@ const Ingredients = () => {
             amount: responseData[key].amount,
           });
         }
-        setUserIngredients(loadedIngredientData);
+        setUserIngredients(loadedIngredientData, userIngredients);
       });
   }, []);
+
+  useEffect(() => {
+    console.log("RENDERING INGREDIENT");
+  }, [userIngredients]);
 
   const addIngredientHandler = (ingredient) => {
     fetch(
