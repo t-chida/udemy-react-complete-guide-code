@@ -29,11 +29,10 @@ const Search = React.memo((props) => {
                 amount: responseData[key].amount,
               });
             }
-            console.log(loadedIngredients);
             onLoadIngredients(loadedIngredients);
           });
       }
-    }, 50);
+    }, 500);
     return () => {
       clearTimeout(timer);
     };

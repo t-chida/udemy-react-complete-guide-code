@@ -7,11 +7,12 @@ import { AuthContext } from "./context/auth-context";
 const App = (props) => {
   const authContext = useContext(AuthContext);
 
-  let context = <Auth />;
+  let content = <Auth />;
   if (authContext.isAuth) {
-    context = <Ingredients />;
+    content = <Ingredients />;
   }
-  return context;
+
+  return content;
 };
 
 export default App;
