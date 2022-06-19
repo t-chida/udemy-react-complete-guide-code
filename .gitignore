@@ -26,3 +26,10 @@ yarn-error.log*
 # vscode
 .vscode
 *.code-workspace
+
+# Firebase
+.firebase/
+.firebaserc
+
+# Next.js
+.next/
